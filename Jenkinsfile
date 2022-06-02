@@ -9,7 +9,7 @@ pipeline {
                 sh './scripts/clone.sh'
             }
         }
-        stage('STAGE_NAME'){
+        stage('Test'){
             steps {
                 sh './scripts/test.sh'
             }
