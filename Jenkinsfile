@@ -9,7 +9,7 @@ pipeline {
                 sh './scripts/clone.sh'
             }
         }
-        stage('Test'){
+        stage('STAGE_NAME'){
             steps {
                 sh './scripts/test.sh'
             }
@@ -24,4 +24,5 @@ pipeline {
         always {
             rm -r ../test
         }
+    }
 }
