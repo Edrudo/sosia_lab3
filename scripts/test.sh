@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-cd "../test"
+cd "./test"
 if ! python -m unittest test.py || ! bandit -r ./test.py ./OperationsManager.py
 then
   timestamp=$(date +%s)

@@ -1,3 +1,5 @@
 #!/bin/bash
 set -e
-cp ../test/* ../production
+rm -rf "./production"
+mkdir -p "./production"
+cp -r ./test/* ./production
