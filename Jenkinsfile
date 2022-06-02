@@ -22,7 +22,7 @@ pipeline {
     }
     post {
         always {
-            rm -r ../test
+            sh "rm -r ../test"
         }
     }
 }
