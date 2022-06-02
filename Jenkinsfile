@@ -4,19 +4,19 @@ pipeline {
         skipStagesAfterUnstable()
     }
     stages {
-        stage('Clone'){
+        stage("Clone"){
             steps {
-                sh './scripts/clone.sh'
+                sh "./scripts/clone.sh"
             }
         }
-        stage('Test'){
+        stage("Test"){
             steps {
-                sh './scripts/test.sh'
+                sh "./scripts/test.sh"
             }
         }
-        stage('Deploy') {
+        stage("Deploy") {
             steps {
-                sh './scripts/deploy.sh'
+                sh "./scripts/deploy.sh"
             }
         }
     }
