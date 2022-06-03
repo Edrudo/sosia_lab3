@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
-rm -rf "./production"
 mkdir -p "./production"
+rm -rf "./production"
 cp -r ./test/* ./production
