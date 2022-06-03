@@ -11,7 +11,7 @@ then
   ext=1
 fi
 
-if ! python3.8 test.py
+if ! python3.8 ./test.py
 then
   testLogFile=testsLog.$timestamp
   touch ../logs/$testLogFile
