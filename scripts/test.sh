@@ -1,6 +1,7 @@
 #!/bin/bash
 mkdir -p "./logs"
 cd "./test"
+echo $PWD
 timestamp=$(date +%F_%H-%M-%S)
 ext=0
 if ! bandit -r ./test.py ./OperationsManager.py
