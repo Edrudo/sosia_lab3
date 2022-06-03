@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p "./logs"
-cd "./test"
+cd "./test/sosia_lab3/"
 ls
 timestamp=$(date +%F_%H-%M-%S)
 ext=0
