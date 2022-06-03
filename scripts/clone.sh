@@ -1,5 +1,4 @@
 #!/bin/bash
-apt install python3 -y
 set -e
 rm -rf "./test"
 mkdir -p "./test"
