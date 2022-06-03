@@ -15,8 +15,8 @@ class OperationsManager():
         return self.a / self.b
 
     def perform_multiplication(self):
-        return self.a * self.b
-        #return self.a * 1
+        #return self.a * self.b
+        return self.a * 1
 
 if __name__ == "__main__":
     user = input("Username: ")
