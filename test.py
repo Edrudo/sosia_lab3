@@ -16,8 +16,18 @@ class Testing(unittest.TestCase):
 
     def test_perform_multiplication(self):
         manager = OperationsManager.OperationsManager(1, 2)
+
         res = manager.perform_division()
         self.assertEqual(res, 2)
 
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestSuite()
+    suite.addTest(Testing('test_perform_division_by_zero'))
+    suite.addTest(Testing('test_perform_division'))
+    suite.addTest(Testing('test_perform_multiplication'))
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+
+    if result.wasSuccessful():
+        exit(0)
+    else:
+        exit(1)
