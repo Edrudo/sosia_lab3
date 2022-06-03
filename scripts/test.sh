@@ -1,13 +1,11 @@
 #!/bin/bash
 cd "./test/sosia_lab3/"
 mkdir "./logs"
-ls
 timestamp=$(date +%F_%H-%M-%S)
 ext=0
 if ! bandit -r ./test.py ./OperationsManager.py
 then
   banditLogFile=banditLog.$timestamp
-  echo $PWD
   touch ./logs/$banditLogFile
   bandit -r ./test.py ./OperationsManager.py > ./logs/$banditLogFile
   ext=1
